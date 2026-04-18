@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0f172a, #1e1b4b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #8b5cf6;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(139, 92, 246, 0.8);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+.hero-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #8b5cf6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #7c3aed;
+}
+
+/* General Sections */
+.section {
+  padding: 80px 10%;
+}
+
+.section:nth-child(odd) {
+  background-color: #111827;
+}
+
+.section:nth-child(even) {
+  background-color: #0f172a;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #8b5cf6;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+p {
+  color: #e2e8f0;
+}
+
+/* Cards */
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* About / Education / Experience */
+#about p,
+#education .card,
+#experience .card {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-box {
+  width: 340px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.skills-box ul {
+  padding-left: 20px;
+}
+
+.skills-box li {
+  margin-bottom: 8px;
+}
+
+/* Volunteer Counter */
+.counter-box {
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+#counter {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #8b5cf6;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-card {
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-card a {
+  color: #c4b5fd;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #020617;
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scrollbar for skills */
+.skills-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.skills-box::-webkit-scrollbar-thumb {
+  background-color: #8b5cf6;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 70px 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-title {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 170px;
+    height: 170px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills-box,
+  .contact-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 60px 6%;
+  }
+
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  #counter {
+    font-size: 3rem;
+  }
+}
