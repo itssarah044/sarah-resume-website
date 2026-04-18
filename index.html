@@ -6,33 +6,46 @@
   <title>Sarah Al-ansari | Portfolio</title>
   <link rel="stylesheet" href="cssweb.css">
 </head>
+
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Sarah</div>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <header class="hero">
     <div class="hero-content">
-      <img src="images/profile.png" alt="Sarah" class="profile-image">
-
+      <img src="images/profile.png" class="profile-image" alt="Sarah">
       <h1>Sarah Al-ansari</h1>
       <p class="hero-title">Software Engineering Student</p>
-
-      <a href="#about" class="hero-button">Explore My Portfolio</a>
     </div>
   </header>
 
   <main>
 
-    <section id="about" class="section reveal">
+    <!-- About -->
+    <section id="about" class="section">
       <h2>About Me</h2>
       <p>
-        I am a high-achieving Software Engineering student at the University of Jeddah with a GPA of 4.79/5.0.
-        I am seeking a cooperative training opportunity to apply my skills in backend development, system design,
-        and software engineering practices. I am eager to contribute to real-world solutions while gaining
-        hands-on experience.
+        High-achieving Software Engineering student with a 4.79/5.0 GPA, seeking a cooperative training opportunity to apply skills in backend development, system design, and software engineering practices. Eager to contribute to scalable, real-world solutions while gaining hands-on experience.
       </p>
     </section>
 
-    <section id="education" class="section reveal">
+    <!-- Education -->
+    <section id="education" class="section">
       <h2>Education</h2>
+
       <div class="card">
         <h3>Bachelor of Science in Software Engineering</h3>
         <p>University of Jeddah – College of Computer Science and Engineering</p>
@@ -41,10 +54,12 @@
       </div>
     </section>
 
-    <section id="certificates" class="section reveal">
+    <!-- Certificates -->
+    <section id="certificates" class="section">
       <h2>Certificates & Awards</h2>
 
       <div class="grid">
+
         <div class="card">
           <h3>Excellence Certification</h3>
           <p>University of Jeddah</p>
@@ -92,122 +107,157 @@
           <p>Red Hat</p>
           <p>March 2026</p>
         </div>
+
       </div>
     </section>
 
-    <section id="projects" class="section reveal">
-      <h2>Projects</h2>
+    <section id="projects" class="section">
+  <h2>Projects</h2>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Awzenha | BMI & Fitness Tracking App</h3>
-          <p>September 2025 – December 2025</p>
-          <p>
-            Developed backend logic for BMI calculation and calorie recommendations.
-            Implemented local data storage and dashboard features.
-            Tested and validated multiple user stories to ensure usability and functionality.
-          </p>
+  <div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="images/project1.png" alt="Awzenha">
+
+      <div class="project-content">
+        <h3>Awzenha</h3>
+
+        <p>
+          A BMI and fitness tracking app that helps users calculate BMI, track goals, and view a simple health dashboard.
+        </p>
+
+        <div class="project-tags">
+          <span>Figma</span>
+          <span>UI/UX</span>
+          <span>BMI Logic</span>
+          <span>Local Storage</span>
         </div>
 
-        <div class="card">
-          <h3>Hit The Spot | UI/UX Design Project</h3>
-          <p>April 2024</p>
-          <p>
-            Designed a mobile app that helps users discover local events and concerts based on
-            location and interests. Created personas, prototypes, and a full user journey map.
-          </p>
-        </div>
+        <a href="https://www.figma.com/design/w3lo0BncBnAFfDiCQDfgng/أوزنها?node-id=0-1&p=f&t=hXC5xcaZNmUdSlhz-0"
+           target="_blank" class="project-btn">
+          View Project
+        </a>
       </div>
-    </section>
+    </div>
 
-    <section id="experience" class="section reveal">
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="images/project2.png" alt="Hit The Spot">
+
+      <div class="project-content">
+        <h3>Hit The Spot</h3>
+
+        <p>
+          A mobile app concept that helps users discover local events and concerts based on interests and location.
+        </p>
+
+        <div class="project-tags">
+          <span>Figma</span>
+          <span>UI/UX</span>
+          <span>User Personas</span>
+          <span>Prototyping</span>
+        </div>
+
+        <a href="https://www.figma.com/design/PX5vZZJ6PZaaE2GogC1TnI/HIT-THE-SPOT-task-1?m=auto&t=zxwFLibfeSSj5Ob5-1"
+           target="_blank" class="project-btn">
+          View Project
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
       <h2>Work Experience</h2>
 
       <div class="card">
         <h3>Ertwaa Platform</h3>
         <p>Vice President | Project Manager</p>
-        <p>December 2023 – November 2024</p>
-        <p>
-          Led and coordinated 4 cross-functional teams to deliver internal platform projects.
-          Contributed to a 30% improvement in productivity through process optimization.
-        </p>
+        <p>Dec 2023 – Nov 2024</p>
       </div>
     </section>
 
-    <section id="skills" class="section reveal">
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
       <h2>Skills</h2>
 
-      <div class="skills-container">
-        <div class="skills-box card">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>Figma</li>
-            <li>System Architecture</li>
-            <li>UML & Software Modeling</li>
-            <li>Agile Methodologies</li>
-            <li>Object-Oriented Programming</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-            <li>Dart</li>
-            <li>SQL</li>
-            <li>Power BI</li>
-            <li>Firebase</li>
-            <li>Git</li>
-            <li>Visual Studio Code</li>
-            <li>Eclipse</li>
-          </ul>
-        </div>
+      <div class="skills-card">
+        <h3>Technical Skills</h3>
 
-        <div class="skills-box card">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Management</li>
-            <li>Problem-solving</li>
-            <li>Communication</li>
-            <li>Leadership</li>
-          </ul>
+        <div class="skills-tags">
+          <span>Figma (UI/UX)</span>
+          <span>System Architecture</span>
+          <span>UML & Modeling</span>
+          <span>Agile</span>
+          <span>OOP</span>
+          <span>Java</span>
+          <span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Python</span>
+          <span>Dart</span>
+          <span>SQL</span>
+          <span>Power BI</span>
+          <span>Firebase</span>
+          <span>Git</span>
+          <span>VS Code</span>
+          <span>Eclipse</span>
         </div>
       </div>
+
+      <div class="skills-card">
+        <h3>Soft Skills</h3>
+
+        <div class="skills-tags">
+          <span>Management</span>
+          <span>Problem-Solving</span>
+          <span>Communication</span>
+          <span>Leadership</span>
+        </div>
+      </div>
+
     </section>
 
     <section id="volunteer" class="section reveal">
-      <h2>Volunteer Hours</h2>
-      <div class="counter-box card">
-        <span id="counter">0</span>
-        <p>Hours of Volunteering</p>
-      </div>
-    </section>
+  <h2>Volunteer Hours</h2>
 
-    <section id="contact" class="section reveal">
-      <h2>How to Contact Me</h2>
+  <div class="counter-box card">
+    <span id="counter">0</span>
+    <p>Hours of Volunteering</p>
+  </div>
+</section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
 
       <div class="contact-container">
         <div class="contact-card">
-          <span class="icon">📞</span>
-          <p>+966 54 237 0360</p>
+          <p>Phone</p>
+          <p><strong>+966 54 237 0360</strong></p>
         </div>
 
         <div class="contact-card">
-          <span class="icon">✉️</span>
-          <p>Sarah_m_12@hotmail.com</p>
+          <p>Email</p>
+          <p><strong>Sarah_m_12@hotmail.com</strong></p>
         </div>
 
-        <div class="contact-card">
-          <span class="icon">💼</span>
-          <a href="https://linkedin.com/in/Sarah-Alansari" target="_blank">LinkedIn Profile</a>
-        </div>
+       <div class="contact-card">
+       <p>LinkedIn</p>
+       <a href="https://www.linkedin.com/in/sarah-alansari-6947152aa" target="_blank" class="linkedin-btn">
+         View Profile
+        </a>
+       </div>
+
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>&copy; 2026 Sarah Al-ansari. All rights reserved.</p>
-  </footer>
-
   <script src="script.js"></script>
+
 </body>
 </html>
